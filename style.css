@@ -1,0 +1,45 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+header{
+    padding: 10px;
+    border-bottom: 1px silver solid;
+    box-shadow: 0px 0px 5px rgba(0,0,5,0.3);
+    font-family: Montserrat;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+header > a{
+    font-size: 17px;
+}
+
+nav{
+    display: inline-block;
+    margin-left: 56%;
+}
+nav a{
+    font-size: 14px;
+    color: rgb(0,0,0);
+}
+nav a:hover{
+    border-right: 1px silver solid;
+    border-left: 1px silver solid;
+}
+nav + a{
+    margin-left: 1%;
+    font-size: 14px;
+    color: blue;
+    padding: 3px;
+    border: 2px blue solid;
+    border-radius: 5px;
+}
+nav + a:hover{
+    color: rgb(255, 255, 255);
+    background: blue;
+}
