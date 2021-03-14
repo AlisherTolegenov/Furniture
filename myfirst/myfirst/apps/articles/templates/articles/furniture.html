@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Магазин мебели {% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <a href="{% url 'main' %}">СемМебель</a>
+<nav>
+    <a href="{% url 'shop' %}">Магазин</a>
+    <a href="{% url 'contact-us' %}">Контакты</a>
+    <a href="{% url 'about-us' %}">О нас</a>
+</nav>
+    <a href="">Зарегистрироваться</a>
+</header>
+{% block container %} <h1>Это главная страница</h1> {% endblock %}
+<script src="script.js">
+</script>
+</body>
+</html>
